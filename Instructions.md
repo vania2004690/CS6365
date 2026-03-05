@@ -17,6 +17,3 @@ Required libraries:
 
 ```bash
 pip install pandas
-
-The current implementation focuses on data preparation and user interaction logs.
-python data_frame.py
