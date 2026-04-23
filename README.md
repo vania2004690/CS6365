@@ -169,8 +169,8 @@ python metric_eval.config.py
 ---
 
 ## Author
-Vania Munjar - GTID: 903871348
-Georgia Tech – CS 6365
-Fitness Recommendation System Project
+* Vania Munjar
+* GTID: 903871348
+* Georgia Tech – CS 6365
 
 ---
