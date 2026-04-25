@@ -1,14 +1,16 @@
+from pathlib import Path
 
-# config.py
-DATA_PATH = "workout_fitness_tracker_data.csv"
+BASE_DIR = Path("/Users/vaniamunjar/Desktop/fitness_tracker_recommender")
 
-# Labeling rule for implicit "acceptance" (binary classification target)
-# We'll mark a row as accepted (1) if either:
-#  - Mood After Workout is 'Energized' or 'Happy'
-#  - OR Calories Burned is >= dataset median
-POSITIVE_MOODS = {"Energized", "Happy"}
+DATA_PATH = BASE_DIR / "workout_fitness_tracker_data.csv"
+OUTPUT_DIR = BASE_DIR / "outputs"
 
-# Optional: PCA components (set to None to disable PCA)
-PCA_COMPONENTS = 10
-TEST_SIZE = 0.2
 RANDOM_STATE = 42
+TEST_SIZE = 0.2
+
+USE_PCA = True
+PCA_VARIANCE = 0.95
+
+POSITIVE_CALORIE_THRESHOLD = 300
+GMM_COMPONENTS = 5
+TOP_K_VALUES = [5, 10, 20]
